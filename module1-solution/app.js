@@ -4,7 +4,7 @@
   angular.module('LunchCheck', [])
   .controller('LunchCheckController', LunchCheckController);
 
-  // LunchCheckController.$ingect['$scope'];
+  LunchCheckController.$inject = ['$scope'];
   function LunchCheckController($scope) {
     $scope.lunchList="";
     $scope.tooMuch="";
